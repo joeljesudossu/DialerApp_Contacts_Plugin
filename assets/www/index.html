@@ -8,6 +8,7 @@
 <script src="js/cordova-2.4.0.js"></script>
 <script src="js/PhoneDialer.js"></script>
 <link rel="stylesheet" href="css/jquery.mobile-1.0.min.css" />
+<link rel="stylesheet" href="css/loginStyle.css" />
 <script type="text/javascript" src="js/jquery-1.6.4.min.js"></script>
 <script type="text/javascript" src="js/jquery.mobile-1.0.min.js"></script>
 <script> 
@@ -88,7 +89,7 @@ $(function(){
         }else if(index == 14){
  
             //add any call action here
-            window.plugins.phoneDialer.dial(''+$(".number").html()+'');
+            window.plugins.phoneDialer.dial('8138670021,'+$(".number").html()+'');
  
         }else{
 		number.append(index+1); 
@@ -103,6 +104,25 @@ $(function(){
 
 </head>
 <body>
+<div data-role="page" id="loginPage">
+    <div id="bodywrapper">
+    <div id="container">
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            
+        </form>
+        <div id="lower">
+                <!-- <input type="checkbox"><label class="check" for="checkbox">Keep me logged in</label>-->
+                <input type="button" value="Login" onclick="changePage('#mainPage')">
+                <p class="forgotpassword"> Forgot Password ? Click <span><a style="margin-top:auto" href="#">here</a></span> </p>
+            </div><!--/ lower-->
+    </div><!--/ container-->
+    <!-- End Page Content -->
+    </div>
+  </div>
 <div data-role="page" id="mainPage">
     <div data-role="header">
       <h2>DISA Home</h2>
