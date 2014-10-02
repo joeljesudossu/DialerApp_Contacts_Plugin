@@ -38,6 +38,8 @@
     <preference name="auto-hide-splash-screen" value="false" />
 <plugins>
 	<plugin name="PhoneDialer" value="org.apache.cordova.PhoneDialer"/>
+	<plugin name="ContactPicker" value="org.apache.cordova.ContactPickerPlugin"/>
+	<plugin name="OrientationLock" value="org.apache.cordova.OrientationLock"/>
 			
     <plugin name="App" value="org.apache.cordova.App"/>
     <plugin name="Geolocation" value="org.apache.cordova.GeoBroker"/>
